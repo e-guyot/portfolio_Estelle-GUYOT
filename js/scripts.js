@@ -20,7 +20,7 @@
             if (target.length) {
                 $("html, body").animate(
                     {
-                        scrollTop: target.offset().top - 72,
+                        scrollTop: target.offset().top - 100,
                     },
                     1000,
                     "easeInOutExpo"
@@ -43,7 +43,8 @@
 
     // Collapse Navbar
     var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
+        console.log($("#mainNav").offset().top);
+        if ($("#mainNav").offset().top > 550) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");
