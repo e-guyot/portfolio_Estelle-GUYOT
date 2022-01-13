@@ -24,7 +24,6 @@ $(function () {
                 method: 'POST',
                 url: 'https://formsubmit.co/ajax/451e77c652a802561a9877792472d08a',
                 dataType: 'json',
-                accepts: 'application/json',
                 data: {
                     name: name,
                     phone: phone,
@@ -59,8 +58,8 @@ $(function () {
                     $("#success > .alert-danger").append(
                         $("<strong>").text(
                             "Sorry " +
-                                firstName +
-                                ", it seems that my mail server is not responding. Please try again later!"
+                            firstName +
+                            ", it seems that my mail server is not responding. Please try again later!"
                         )
                     );
                     $("#success > .alert-danger").append("</div>");
