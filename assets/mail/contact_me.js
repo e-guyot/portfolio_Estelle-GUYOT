@@ -13,6 +13,7 @@ $(function () {
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
+            console.log(name);
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
@@ -31,8 +32,7 @@ $(function () {
                     message: message,
                 },
                 cache: false,
-                success: function (result) {
-                    console.log(result);
+                success: function () {
                     // Success message
                     $("#success").html("<div class='alert alert-success'>");
                     $("#success > .alert-success")

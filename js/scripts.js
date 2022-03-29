@@ -43,7 +43,6 @@
 
     // Collapse Navbar
     var navbarCollapse = function () {
-        console.log($("#mainNav").offset().top);
         if ($("#mainNav").offset().top > 550) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
