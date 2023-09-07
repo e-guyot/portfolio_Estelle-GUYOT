@@ -20,7 +20,7 @@
             if (target.length) {
                 $("html, body").animate(
                     {
-                        scrollTop: target.offset().top - 100,
+                        scrollTop: target.offset().top - 50,
                     },
                     1000,
                     "easeInOutExpo"
@@ -54,6 +54,7 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
 
 function showAllTimeline() {
     var timelineItems = document.querySelectorAll(".timeline li");
