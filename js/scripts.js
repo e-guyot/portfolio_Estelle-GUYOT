@@ -54,3 +54,16 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+function showAllTimeline() {
+    var timelineItems = document.querySelectorAll(".timeline li");
+
+    // Parcourez tous les éléments <li> de la timeline
+    timelineItems.forEach(function (item) {
+        item.style.display = "block";
+    });
+
+    // Masquez le bouton "Afficher tout" une fois que tous les éléments sont affichés
+    var showAllButton = document.getElementById("showAllButton");
+    showAllButton.style.display = "none";
+}
