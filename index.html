@@ -33,6 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#aboutMe">À propos</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#competences">Compétences</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#parcours">Mon parcours</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projets">Mes projets</a></li>
@@ -63,22 +64,27 @@
                 </div>
                 <div class="col-md-9">
                     <p class="col-md-9 offset-md-2">
-                        Bienvenue, <br> <br>Vous êtes en train de visualiser mon portail web. Je me présente je
-                        m'appelle Estelle GUYOT. Je suis actuellement en <a
-                            href="https://formations.univ-gustave-eiffel.fr/index.php?id=1941&tx_agof_brochure%5Bbrochure%5D=421&tx_agof_brochure%5Bcontroller%5D=Brochure&tx_agof_brochure%5Baction%5D=show&cHash=3680625db1906eea6f6dcd6ef615f65a"
-                            target="_blank">Master 2 : SSIO</a> à Champs-sur-Marne proche Paris et je
-                        souhaiterais
-                        poursuivre mes études dans le domaine de l'iot. Pour le moment j'approfondis mes
-                        connaissances et tente de nouvelles technologies. Pour avoir plus d'informations à mon sujet,
-                        mes projets ou mes intérêts vous pouvez surfer sur les différents onglets. Si vous souhaitez me
-                        contacter vous pouvez me laisser un message dans l'onglet "Contact" ou via LinkedIn.
+                        Bienvenue sur mon portail web,<br> <br>
+
+                        Je m'appelle Estelle GUYOT.
+                        Je recherche actuellement une opportunité au sein d'une entreprise spécialisée dans le domaine
+                        de l'embarqué.
+                        Mon intérêt pour la technologie date de mon enfance lorsque je prenais plaisir à démonter et
+                        restaurer les ordinateurs de mes parents.
+                        Depuis 2019, j'ai étendu mes compétences à la restauration de consoles de jeu.
+                        <br> <br>
+                        Actuellement, je travaille sur l'approfondissement de mes connaissances et j'explore de
+                        nouvelles technologies dans ce domaine.
+                        Si vous souhaitez en savoir plus sur mon parcours, mes projets ou mes intérêts, je vous invite à
+                        explorer les différents onglets de ce site.
+                        Pour toute question ou pour prendre contact avec moi, vous pouvez utiliser l'onglet "Contact" ou
+                        me joindre via LinkedIn.
                     </p>
                     <a class="btn btn-dark btn-social mx-2"
                         href="https://www.linkedin.com/in/estelle-guyot-452117161/"><i
                             class="fab fa-linkedin-in"></i></a>
-                  <!--  <a class="btn btn-dark btn-social mx-2" target="_blank"
-                        href="ext/CV_Estelle_GUYOT.pdf"><i
-                             class="fab fa fa-address-card"></i></a> -->
+                    <a class="btn btn-dark btn-social mx-2" href="mailto:guyot.estellee@gmail.com"><i
+                            class="fa fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -183,6 +189,9 @@
                             <div class="col-md-6 progress-groupe">
                                 <a>• Docker</a>
                             </div>
+                            <div class="col-md-6 progress-groupe">
+                                <a>• GitLab CI/CD</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,7 +243,7 @@
                         </h4>
                     </div>
                 </li>
-                <li>
+                <li class="">
                     <div class="timeline-image"><img class="rounded-circle img-fluid"
                             src="assets/img/parcours/Ministère_education.jpg" alt="" /></div>
                     <div class="timeline-panel">
@@ -262,7 +271,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="">
                     <div class="timeline-image"><img class="rounded-circle img-fluid"
                             src="assets/img/parcours/Ministère_education.jpg" alt="" /></div>
                     <div class="timeline-panel">
@@ -291,6 +300,15 @@
                     </div>
                 </li>
                 <li>
+                    <div class="timeline-image" id="showAllButton" onclick="showAllTimeline()">
+                        <h4>
+                            Afficher plus
+                            </br>
+                            <i class="fa fa-solid fa-arrow-down"></i>
+                        </h4>
+                    </div>
+                </li>
+                <li class="timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid"
                             src="assets/img/parcours/Ministère_education.jpg" alt="" /></div>
                     <div class="timeline-panel">
@@ -304,7 +322,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid"
                             src="assets/img/parcours/ipssi.jpg" alt="" /></div>
                     <div class="timeline-panel">
@@ -317,7 +335,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/parcours/bts.jpg"
                             alt="" /></div>
                     <div class="timeline-panel">
@@ -330,7 +348,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/parcours/sncf.JPG"
                             alt="" /></div>
                     <div class="timeline-panel">
@@ -345,7 +363,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/parcours/CO.jpg"
                             alt="" /></div>
                     <div class="timeline-panel">
@@ -358,7 +376,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid"
                             src="assets/img/parcours/onisep.jpg" alt="" /></div>
                     <div class="timeline-panel">
@@ -372,7 +390,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid"
                             src="assets/img/parcours/permis.jpg" alt="" /></div>
                     <div class="timeline-panel">
@@ -382,7 +400,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/parcours/bafa.JPG"
                             alt="" /></div>
                     <div class="timeline-panel">
@@ -396,7 +414,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="timeline-hidden">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/parcours/bac.jpg"
                             alt="" /></div>
                     <div class="timeline-panel">
@@ -794,11 +812,14 @@
                                 <!-- Project Details Go Here-->
                                 <h2 class="text-uppercase">Alternance : Ministère de l'éducation Nationale</h2>
                                 <p class="text-justify">
-                                    Lors de ma dernière année avec le Ministère de l'éducation Nationale, j'ai été intégrée au sein du pôle devOps. Grâce à ce poste j'ai pu apprendre de nouvelles compétences comme la réalisation de jobs gitlab, de script de déploiement, mettre en place des projets sur des serveurs, découvrir de nouveaux outils pour avoir une vue d'ensemble sur le Système d'information. 
+                                    Lors de ma dernière année avec le Ministère de l'éducation Nationale, j'ai été
+                                    intégrée au sein du pôle devOps. Grâce à ce poste j'ai pu apprendre de nouvelles
+                                    compétences comme la réalisation de jobs gitlab, de script de déploiement, mettre en
+                                    place des projets sur des serveurs, découvrir de nouveaux outils pour avoir une vue
+                                    d'ensemble sur le Système d'information.
                                 </p>
-                                <a class="btn btn-primary" href=""
-                                    type="button" target="_blank">
-                                    Le rapport d'alternance sera publié en juin. 
+                                <a class="btn btn-primary" href="" type="button" target="_blank">
+                                    Le rapport d'alternance sera publié en juin.
                                 </a>
                             </div>
                         </div>
